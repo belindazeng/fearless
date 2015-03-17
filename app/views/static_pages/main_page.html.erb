@@ -1,0 +1,986 @@
+<html class=" web-homepage target-experience-full js">
+    <!-- template for the pricing -->
+    <!-- script for header -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/picturefill.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/smoothscroll.min.js"></script>
+        <script src="js/jquery.nav.min.js"></script>
+        <script src="js/jquery.inview.min.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+        <script src="js/jquery.stellar.min.js"></script>
+        <script src="js/script.js"></script>
+    <head>
+        
+        <!-- CSS
+        ================================= -->
+
+        <!-- LIBRARIES CSS -->
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <!--<link rel="stylesheet" href="css/font-awesome.min.css">-->
+       
+
+        <!-- SPECIFIC CSS -->
+        <link rel="stylesheet" href="style.css">
+        <link id="color-css" rel="stylesheet" href="colors/yellow.css">
+        
+        
+    </head>
+   
+
+    <head>
+       
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+        <title> Fearless </title>
+        
+        <script type="text/javascript">
+            window.targetExperience = 'full';
+        </script>
+
+        <!-- Using Chassis -->
+
+      
+        <title>fearless Member Homepage | Personalized Sales | fearless Groupe</title>
+        <meta name="description" content="Fearless makes it painless for young women to experiment with bold, new styles and appreciate their bodies. We provides insider access to today's top brands at affordable prices.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        
+
+       
+        
+        <meta property="og:description" content="Fearless provides insider access to today's top brands for women, men, kids, and home as well as local experiences, amazing getaways, and gourmet finds - at up to 60% off">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Fearless">
+       
+       <!-- insert favicon here -->
+
+
+        <style type="text/css">
+            /* This is for rogue tracking pixels that don't hide themselves */
+            body > iframe,
+            body > img {
+            position: absolute;
+            top: -30px;
+            }
+        </style>
+
+
+        <link rel="stylesheet" type="text/css" href="style1.css">
+        <link rel="stylesheet" type="text/css" href="style2.css">
+        
+        <!-- THIN HEADER
+        ================================= -->
+        <header id="header" class="header-section section section-dark navbar navbar-fixed-top">
+
+            <div class="container-fluid">
+
+                <div class="navbar-header navbar-left">
+
+                    <!-- RESPONSIVE MENU BUTTON -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- HEADER LOGO -->
+                    <a class="navbar-logo navbar-brand anchor-link" href="#hero">
+                        <%= image_tag("fearless-white-large.png") %>
+                    </a>
+
+                </div>
+
+                <nav id="navigation" class="navigation navbar-collapse collapse navbar-right">
+                        
+                    <!-- NAVIGATION LINKS -->
+                    <ul id="header-nav" class="nav navbar-nav">
+                        
+                        <li><a href="#hero" class="hidden">Top</a></li>
+
+                        <li><a href="#why"> WHY FEARLESS </a></li>
+                        <li><a href="#how"> HOW IT WORKS </a></li>
+                        <li><a href="#what"> THE PACKAGE </a></li>
+                        <li><a href="#price">PRICE</a></li>
+                        <li><a href="#love"> WE LOVE </a></li>
+                               
+                        
+                        <!-- HEADER ACTION BUTTON -->
+                        <li class="header-action-button"><a href="javascript:signUp();" class="button tint WOMEN">Sign Up</a></li>
+
+                    </ul>
+                </nav>
+
+            </div>
+
+        </header>
+
+        <!--<![endif]-->
+    </head>
+
+    <body class="homepage women" cz-shortcut-listen="true">
+        <div class="nav-unified">
+            <header class="fearless-navigation component-nav-unified login-reg-wall">
+                <div class="nav-wrap">
+                    <div class="fearless-logo">
+                        <a href="#" class="logo  login-reg-wall-override">fearless</a>
+                    </div>
+                    <div class="nav-unified-account-container">
+                        <div class="nav-unified-account-inner">
+                            <nav class="account-navigation">
+                                <ul class="account-tabs">
+                                    <li class="account-tab account-nav-sign-in">
+                                        <a href="#" id="button_id" data-fearless-tracking="sign-in" class="account-nav-label  login-link">Sign In</a>
+                                    </li>
+                                    <li class="account-tab">
+                                        <a href="javascript:signUp();" id="button_id" class="account-nav-label register-link" >Register</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="nav-actions" onClick="javascript:signUp()">
+                                <button class=" fearless-cart-open-link login-reg-wall-override" data-fearless-tracking="cart-label">
+                                Cart
+                                <span class="nav-cart-count cart-count nav-cart-item-count">
+                                0
+                                </span>
+                                </button> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-unified-store-container">
+                        <div class="nav-unified-store-inner">
+                            <form class="search search-form nav-unified-autosuggest search-form-deactivated search-menu-anchor" method="post"action="javascript:signUp();">
+                                <div class="search-form-inner" id='button_id'>
+                                    <input class="search-input" type="search" tabindex="1" autocomplete="off" placeholder="Search" data-fearless-test="input-search" >
+                                    
+                                    <button id="button_id" class="search-submit" type="submit" data-fearless-test="button-search">
+                                    <input class="search-clear" type="reset" value="Clear">
+                                    <button class="search-cancel" type="button">Cancel</button>
+                                </div>
+                               
+                            </form>
+                        
+                        </div>
+                    </div>
+                </div>
+                <!-- sign up -->
+                <script>
+                function signUp(){
+                    
+                   $('#form_id').show();//Form shows on button click
+                
+                }
+                       
+                </script>
+            </header>
+        </div>
+        <div class="main">
+            <div id="user-logged-in" style="visibility: hidden; height: 0;" is-logged-in="false"></div>
+            <section class="hero-container sales-store-affinity-hero" id="banner-img" onclick="javascript:signUp()">
+                <section class="hero">
+                    <article class="sale sale-1101628453 sale-index-0" data-fearless-sale-id="1101628453">
+                        <div class="mwk-superhero">
+                            <header class="name">
+                                <h1 class="h1 WOMEN">
+                                    <a href="javascript: signUp()" class="sale-header-link" style="color:#000000">The Ultimate Dress Shop</a>
+                                </h1>
+                                <p class="copy" style="color:#000000">Effortlessly feminine staples for work, weekends, and beyond
+                                </p>
+                                <a class="button tint WOMEN"> Shop Fearless </a>
+                            </header>
+                        </div>
+                    </article>
+                </section>
+            </section>
+            <div class="store-affinity-wrapper" style="position: relative">
+                <div class="sales-container sales-store-affinity">
+                    <div id="why" class="sales-store-affinity-group affinity-0">
+                        <div class="sales-headline affinity-0">
+                            <span class="sales-store"> Embrace Your Fearless Side </span>
+                        </div>
+                        
+                        
+                        <article class="sale sale-one-column sale-personalized sale-1,100,277,567 medium" data-sale-section="Top Picks" data-sale-index="2" data-fearless-sale-id="1100277567">
+                            <header class="name">
+                                <div class="h1 highlight">
+                                    <a href="#" class="sale-header-link">
+                                        <div class="sale-header-link-name">
+                                            Explore New Styles
+                                        </div>
+                                    </a>
+                                </div>
+                            </header>
+                            <a href="#">
+                            <%= image_tag("styles.jpg", :class => "medium") %>
+                            
+                            </a>
+                        </article>
+                        <article class="sale sale-one-column sale-personalized sale-1,100,234,935 medium" data-sale-section="Top Picks" data-sale-index="3" data-fearless-sale-id="1100234935">
+                            <header class="name">
+                                <div class="h1 highlight">
+                                    <a href="#" class="sale-header-link">
+                                        <div class="sale-header-link-name">
+                                            Save Time
+                                        </div>
+                                    </a>
+                                </div>
+                            </header>
+                            <a href="#">
+                             <%= image_tag("savetime.jpg", :class => "medium") %>
+                            </a>
+                        </article>
+                        <article class="sale sale-one-column sale-personalized sale-1,100,284,451 medium" data-sale-section="Top Picks" data-sale-index="4" data-fearless-sale-id="1100284451">
+                            <header class="name">
+                                <div class="h1 highlight">
+                                    <a href="#" class="sale-header-link">
+                                        <div class="sale-header-link-name">
+                                            Stay Trendy
+                                        </div>
+                                    </a>
+                                </div>
+                            </header>
+                            <a href="#">
+                             <%= image_tag("trendy2.jpg", :class => "medium") %>
+                            </a>
+                        </article>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div id="how" class="sales-store-affinity-group affinity-1">
+                        <div class="sales-headline affinity-1">
+                            <span class="sales-store">How It Works </span>
+                        </div>
+                        
+                        
+                        <article class="sale sale-one-column sale-personalized sale-1,100,277,567 medium" data-sale-section="Top Picks" data-sale-index="2" data-fearless-sale-id="1100277567">
+                           
+                             <%= image_tag("quiz.png", :class => "icon") %>
+
+                            <h4 class="capitalize title-heading"> Discover Your Style </h4>
+                            <p class="capitalize"> Ever wonder what about your style? Not sure what colors and cuts will flatter your body the best? Take our short, fun Style Quiz.</p>
+                        </article>
+                        <article class="sale sale-one-column sale-personalized sale-1,100,234,935 medium" data-sale-section="Top Picks" data-sale-index="3" data-fearless-sale-id="1100234935">
+                          
+
+
+                            <%= image_tag("box.png", :class => "icon") %>
+
+                            <h4 class="capitalize title-heading"> Fearless Fashion </h4>
+                            <p class="capitalize"> Based on your style and body, our fashion experts personally curate the perfect outfit and accessories for you.  </p>
+
+                        </article>
+                        <article class="sale sale-one-column sale-personalized sale-1,100,284,451 medium" data-sale-section="Top Picks" data-sale-index="4" data-fearless-sale-id="1100284451">
+                            <%= image_tag("dress.png", :class => "icon") %>
+
+                            <h4 class="capitalize title-heading"> Own It </h4>
+                            <p class="capitalize"> You will receive our expert picks as a surprise delivered straight to your door at the end of the month. Now own your beautylishous style. </p>
+                        </article>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div  id="what" class="sales-store-affinity-group affinity-1">
+                        <div class="sales-headline">
+                            <span class="sales-store"> So What Do I Get?</span>
+                           
+                        </div>
+                        <article class="sale sale-one-column sale-personalized sale-1,098,072,544 medium" data-sale-section="women|0" data-sale-index="0" data-fearless-sale-id="1098072544">
+                            <header class="name">
+                                <div class="h1 highlight">
+                                    <a href="#" class="sale-header-link">
+                                        <div class="sale-header-link-name">
+                                            A Fashion-Forward Outfit
+                                        </div>
+                                    </a>
+                                </div>
+                            </header>
+                            <a href="#">
+                            <%= image_tag("style.jpg", :class => "medium") %>
+                            
+                            </a>
+                        </article>
+                        <article class="sale sale-one-column sale-personalized sale-1,097,251,952 medium" data-sale-section="women|0" data-sale-index="1" data-fearless-sale-id="1097251952">
+                            <header class="name">
+                                <div class="h1 highlight">
+                                    <a href="#" class="sale-header-link">
+                                        <div class="sale-header-link-name">
+                                            A Matching Accessory
+                                        </div>
+                                    </a>
+                                </div>
+                            </header>
+                            <a href="#">
+                            <%= image_tag("orig.jpg", :class => "medium") %>
+                            
+                            </a>
+                        </article>
+                        <article class="sale sale-one-column sale-personalized sale-1,101,093,114 medium" data-sale-section="women|0" data-sale-index="2" data-fearless-sale-id="1101093114">
+                            <header class="name">
+                                <div class="h1 highlight">
+                                    <a href="#" class="sale-header-link">
+                                        <div class="sale-header-link-name">
+                                            A Makeup Item 
+                                        </div>
+                                    </a>
+                                </div>
+                            </header>
+                            <a href="#">
+                             <%= image_tag("makeup.jpg", :class => "medium") %>
+                            </a>
+                        </article>
+                       
+                        <div class="clearfix"></div>
+                        <!--headline for pricing -->
+                        <div id="price" class="sales-headline">
+                            <span class="sales-store"> Pricing</span>
+                        </div>
+                    </div>
+
+                </div>
+                
+
+                <article class="join-banner" style="display: block;">
+                    <div class="join-bg">
+                    </div>
+                    <section class="content">
+                        <hgroup>
+                            <h1 class="h1"> Join fearless to find the best brands at affordable prices </h1>
+                            <h2 class="h2">Explore something new every month. Join and discover what inspires you today.</h2>
+                        </hgroup>
+                        <input class="join-button button tint" type="button" name="join-fearless" value="Join Fearless" onClick="javascript:signUp()">
+                    </section>
+                </article>
+            </div>
+            <div class="dom-live-module women"></div>
+        </div>
+      
+        <!-- pricing model -->
+
+    <body>
+
+        <div>
+                       
+            
+            <!-- PRICING SECTION
+            ================================= -->
+            <section id="pricing" class="pricing-section section">
+
+                <div class="container">
+                    <!-- PRICING TABLE -->
+                    <div class="pricing-table row">
+
+                        <!-- PRICING PACKAGE 1 -->
+                        <div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3" data-animation="fadeInUp">
+                            <div class="pricing-package">
+                                <div class="pricing-package-header">
+                                    <h4 class="price-title"> 1 Month </h4>
+                                    <div class="price">
+                                        <span class="price-currency">$</span>
+                                        <span class="price-number">26</span>
+                                        <span class="price-decimal">95</span>
+                                    </div>
+                                    <div class="price-description"> One-Time Delivery </div>
+                                </div>
+                                <ul class="pricing-package-items">
+                                    <li> 1 Dress OR 1 Top and Bottom combo </li>
+                                    <li> 1 Accessory </li>
+                                    <li> 1 Makeup Item </li>
+                                    <li><del>$5.95 Shipping</del></li>
+                                    <li><del>24/7 Customer Support</del></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- PRICING PACKAGE 2 -->
+                        <div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3" data-animation="fadeInUp">
+                            <div class="pricing-package pricing-package-featured">
+                                <div class="pricing-package-header">
+                                    <h4 class="price-title"> 4 Months </h4>
+                                    <div class="price">
+                                        <span class="price-currency">$</span>
+                                        <span class="price-number">105</span>
+                                        <span class="price-decimal">95</span>
+                                    </div>
+                                    <div class="price-description">Delivered monthly</div>
+                                    <div class="price-featured">Most Popular</div>
+                                </div>
+                                <ul class="pricing-package-items">
+                                    <li> 4 Dresses OR 4 Top and Bottom combos </li>
+                                    <li> 4 Accessories </li>
+                                    <li> 4 Makeup Item </li>
+                                    <li><del> FREE Shipping</del></li>
+                                    <li><del>24/7 Customer Support</del></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- PRICING PACKAGE 3 -->
+                        <div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3" data-animation="fadeInUp">
+                            <div class="pricing-package">
+                                <div class="pricing-package-header">
+                                    <h4 class="price-title"> 6 Months </h4>
+                                    <div class="price">
+                                        <span class="price-currency">$</span>
+                                        <span class="price-number">115</span>
+                                        <span class="price-decimal">95</span>
+                                    </div>
+                                    <div class="price-description">Delivered Monthly</div>
+                                </div>
+                                <ul class="pricing-package-items">
+                                    <li> 5 Dresses OR 5 Top and Bottom combos </li>
+                                    <li> 9 Accessories </li>
+                                    <li> 8 Makeup Items (A Full Set) </li>
+                                    <li><del> FREE Shipping</del></li>
+                                    <li><del>24/7 Customer Support</del></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            
+        <!-- JAVASCRIPT
+        ================================= -->
+        <script src="js/jquery-1.11.2.min.js"></script>
+        
+        <script src="js/bootstrap.min.js"></script>
+        
+    
+        <script src="js/jquery.inview.min.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+        <script src="js/jquery.stellar.min.js"></script>
+        <!-- adds the animation -->
+        <script src="js/script.js"></script>
+
+        <!-- JOIN 
+        =================================== -->
+        <!-- Buy Section
+
+        ===================================-->
+        <style>
+
+        #qlp-highlights {
+            clear: both;
+            padding: 0 100px 100px 100px;
+            overflow: hidden;
+            background-color: #fff;
+        }
+        #qlp-highlights h3 {
+            margin: 0 0 10px 30px
+        }
+        #qlp-highlights ul {
+            margin-left: 30px;
+            list-style-image: url("check.jpg")
+        }
+        #qlp-highlights li {
+            letter-spacing: 0;
+            font-family: Flama, Helvetica, sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 40px;
+            padding-left: 10px;
+            margin-left: 20px
+        }
+        #qlp-highlights .points {
+            width: 50%;
+            float: left
+        }
+        #qlp-highlights .cost {
+            margin: 2px 50px 0 20px;
+            width: 250px;
+            float: right;
+            padding: 13px 10px 30px 0;
+            text-align: center;
+            background-color: #f7f7f7
+        }
+        #qlp-highlights .price-text {
+            text-transform: none;
+            letter-spacing: 0;
+            font-family:"Austin Web", Georgia, serif; 
+            font-size: 80px;
+            font-style: normal;
+            font-weight: 700;
+            font-style: italic;
+            line-height: 80px;
+            padding-bottom:20px;
+        }
+        #qlp-highlights .price-text span {
+            vertical-align: top;
+            font-size: 35px
+        }
+        #qlp-highlights .sub {
+            text-transform: none;
+            letter-spacing: 0;
+            font-family: 'Old Standard TT', serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            font-style: italic;
+            margin-left: 13px;
+            line-height: 20px
+        }
+        #qlp-highlights .msg {
+            letter-spacing: 0;
+            font-family: Flama, Helvetica, sans-serif;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 300;
+            letter-spacing: 1px;
+            color: #999999;
+            text-transform: uppercase;
+            line-height: 15px
+        }
+        #qlp-highlights .action {
+            margin: 15px 0 0 9px
+        }
+
+        body {
+            letter-spacing: 0;
+            font-family: Flama, Helvetica, sans-serif;
+            font-size: inherit;
+            font-style: normal;
+            font-weight: 300;
+            color: #14214d;
+            letter-spacing: 0;
+            line-height: 29px;
+        }
+        h1,h2,h3,h4,h5,h6,ul,li,p,span {
+            margin: 0;
+            padding: 0
+        }
+        .btn-premium {
+          color: white;
+          background-color: #bd935d;
+            display: inline-block;
+          border: none;
+          cursor: pointer;
+          outline: none;
+          text-align: center;
+          font-family: inherit;
+          font-weight: 300;
+          font-size: 14px;
+          letter-spacing: 1px;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          line-height: 43px;
+          height: 44px;
+          padding: 0 30px;
+          text-transform: uppercase;
+
+        }
+
+        a {
+            font-style: normal;
+            text-decoration: none;
+        }
+        a:hover {
+            font-style: normal;
+            text-decoration: none;
+        }
+        #membership {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 200;
+        }
+
+        .title-heading {
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+         
+</style>
+
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200,100' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Old+Standard+TT:400italic' rel='stylesheet' type='text/css'>
+
+    <div id="qlp-highlights">
+        <div class="sales-headline" id="love">
+            <span class="sales-store"> Stay Chic, Effortlessly </span>
+                            
+        </div>
+        <div class="points">
+            <h3 id="membership"> MEMBERSHIP HIGHLIGHTS</h3>
+            <ul>
+                
+                    <li>Add any of our fashion-forward pieces to your wardrobe </li>
+                
+                    <li>Take our style quiz to start, and discover your unique style</li>
+                
+                    <li>At the end of the month, receive a new pieceto add to your collection </li>
+                
+                    <li>Free shipping, each item delivered straight to your door</li>
+                
+                    <li>Billing is monthly but you can cancel anytime</li>
+                
+            </ul>
+        </div>
+        
+        <div class="cost">
+            <h1 class="price-text"><span></span>$26</h1>
+            <h2 class="sub">your first month</h2>
+            <!--<p class="msg">$99 after</p> 0-->
+            <p class="action"><a href="javascript:signUp()" class="btn-premium needsreg" data-msg="Start Building Your Queue">JOIN NOW</a></p>
+        </div>
+    </div>
+        
+<!--end pricing model-->
+
+
+        <div class="nav-footer">
+            <ul class="footer-nav clearfix">
+                <li class="nav-item nav-footer-fearless">
+                    <ul class="first-footer-links footer-links">
+                        <li><a class="footer-fearless-logo logo hide-text" id="footer-logo" href="#">fearless</a></li>
+                        <li>
+                            <div class="secondary copyright">© 2007 - 2015 FEARLESS, INC.</div>
+                            <div class="secondary copyright">ALL RIGHTS RESERVED.</div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item nav-footer-company">
+                    <ul class="footer-links">
+                        <li class="primary">Company</li>
+                        <li><a class="secondary highlight" href="#">About</a></li>
+                        <li><a class="secondary highlight" href="#">Press</a></li>
+                        <li><a class="secondary highlight" href="#">Careers</a></li>
+                        <li><a class="secondary highlight" href="#">Tech</a></li>
+                        <li><a class="secondary highlight" href="#">E-Gift Cards</a></li>
+                        <li><a class="secondary highlight" href="#">Style Directory</a></li>
+                        <li><a class="secondary highlight" href="#">Brand Directory</a></li>
+                        <li><a class="secondary highlight" href="#">Category Directory</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item nav-footer-customer-service">
+                    <ul class="footer-links">
+                        <li class="primary">Customer Service</li>
+                        <li><a class="secondary highlight" href="#">FAQ / Contact Us</a></li>
+                        <li><a class="secondary highlight" href="#">Return Policy</a></li>
+                        <li><a class="secondary highlight" href="#">Shipping &amp; Tax</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item nav-footer-policies">
+                    <ul class="footer-links">
+                        <li class="primary">Policies</li>
+                        <li><a class="secondary highlight" href="#">Website Terms of Use</a></li>
+                        <li><a class="secondary highlight" href="#">Privacy</a></li>
+                        <li><a class="secondary highlight" href="#">Security</a></li>
+                        <li><a class="secondary highlight" href="#">Terms Of Service</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item nav-footer-social">
+                    <ul class="footer-links">
+                        <li class="primary">Connect with Fearless</li>
+                        <li class="social social-top">
+                            <a class="social-icon secondary highlight" href="#" rel="nofollow">
+                                <div class="button">
+                                    <div class="icon mobile"></div>
+                                </div>
+                                <span class="label">Mobile</span>
+                            </a>
+                        </li>
+                        <li class="social">
+                            <a class="social-link secondary highlight" href="#" rel="nofollow">
+                                <div class="button">
+                                    <div class="icon twitter"></div>
+                                </div>
+                                <span class="label">Twitter</span>
+                            </a>
+                        </li>
+                        <li class="social">
+                            <a class="social-link secondary highlight" href="#" rel="nofollow">
+                                <div class="button">
+                                    <div class="icon facebook"></div>
+                                </div>
+                                <span class="label">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="social">
+                            <a class="social-link secondary highlight" href="#" rel="nofollow">
+                                <div class="button">
+                                    <div class="icon weibo"></div>
+                                </div>
+                                <span class="label">Weibo</span>
+                            </a>
+                        </li>
+                        <li class="social">
+                            <a class="social-link secondary highlight" href="#" rel="nofollow">
+                                <div class="button">
+                                    <div class="icon api"></div>
+                                </div>
+                                <span class="label">API</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item nav-footer-partners">
+                    <ul class="footer-links">
+                        <li class="primary">Magazine Partner</li>
+                        <li>
+                            <div class="dujour-logo-img"></div>
+                            <br/>
+                            <div class="tertiary">Exclusive access to fashion, design, culture, travel, and parties.</div>
+                            <a class="dujour-cta tertiary" href="#" title="Vogue" target="_blank" rel="nofollow">Explore Vogue Now</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+      
+
+        <!-- testing -->
+        <script>
+         
+         $(document).ready(function() {
+
+         $('#form_id').hide(); //Initially form wil be hidden.
+
+          $('#button_id').click(function() {
+           $('#form_id').show();//Form shows on button click
+
+           });
+         });
+        </script>
+
+       
+        <div id="form_id">
+        <aside class="dom-dialog-container dom-dialog-0 login-register-dialog dom-dialog-theme-nouveau dom-dialog-position-center dom-dialog-open" id="dom-dialog-0">
+
+          
+          <div class="dom-dialog-wrapper-1">
+            <div class="dom-dialog-wrapper-2">
+
+              
+              <div class="dom-dialog">
+                
+                
+                <article class="dom-dialog-content">
+                  
+                  
+
+        <div class="login-register simple-dialog form-area login-registration-simple" style="display: block; ">
+          <div class="outer-pane">
+            <!-- Country:US-United States-65.112.10.59 -->
+            
+
+        <!----><!-- Forgot Password Form--><!---->
+        <form class="pane forgot-password-form form" name="forgot-password" style="display: none;">
+          <input type="button" class="highlight back change-form" data-change-form-name="signin" value="Back">
+          <div class="login-reg-container">
+            <div class="gilt-login-reg-logo-container">
+              <div class="gilt-login-reg-logo"></div>
+            </div>
+          <h1 class="category-heading h1">Forgot Password</h1>
+          <p class="instructions hide-after-forgot-password-confirmation">
+            Please enter your email below. We'll send
+        you a link to reset your password.
+          </p>
+          <p class="field hide-after-forgot-password-confirmation">
+            <label>
+              <input type="email" name="email" class="primary email required" placeholder="Email Address">
+            </label>
+          </p>
+
+          <div id="forgot_password_confirmation" class="forgot-password-confirmation" style="display:none">
+            <p class="forgot-password-confirmation-title">
+              We've sent an email with instructions on how to reset your password.
+            </p>
+            <p class="forgot-password-confirmation-content">
+              If you don't receive instructions within a few minutes, check your email's spam and junk filters.
+            </p>
+          </div>
+
+          <input type="button" value="Send Email" class="button send-email hide-after-forgot-password-confirmation">
+
+          <div class="help-instructions small-text">
+            <p class="help-instructions-header">
+              Having Trouble?
+            </p>
+            <p>
+              Email: <a href="mailto:belindazeng@college.harvard.edu">belindazeng@college.harvard.edu</a>
+              <br/>
+            </p>
+
+            <p>
+              Call us at (877) 280-0545
+            </p>
+          </div>
+
+          </div>
+          <p class="new-member">
+            Not a member? <a href="#" class="register-link change-form" data-change-form-name="registration">Sign Up</a>
+          </p>
+        </form>
+
+
+        <!----><!-- Sign In Form--><!---->
+        <form action="https://www.gilt.com/login/redirect" onsubmit="return true;" method="POST" class="pane facebook-login-link-account form" name="fbloginlinkaccount" style="display: none;">
+        <div class="login-reg-container">
+          <div class="gilt-login-reg-logo-container">
+            <div class="gilt-login-reg-logo"></div>
+          </div>
+          <h1 class="category-heading h1">Looks like you're already registered! Confirm your Gilt password to connect with Facebook</h1>
+          <div class="field facebook-user-section">
+            <div class="field facebook-user-container">
+              <img class="facebook-user-picture" src="">
+              <div class="facebook-email-container">
+                <label for="email" class="facebook-email">
+                  <input type="hidden" name="email" id="email" class="primary email required">
+                  <span id="facebook_email_display"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <p class="field">
+            <label for="password" id="fb-link-account-password">
+              <input type="password" name="password" id="facebook-password" class="primary password required" placeholder="Password">
+            </label>
+          </p>
+          <p class="sign-in-submit-button">
+              
+                  <input type="button" value="Submit" class="button login">
+                
+          </p>
+          <p>
+            <label class="forgot-password">
+              <a href="#" class="small-text forgot-password-link change-form" data-change-form-name="forgot-password">Forgot your password?</a>
+            </label>
+          </p>
+          </div>
+          <p class="new-member">
+            <label class="sign-up-link">
+              Not a member? <a href="#" class="register-link change-form" data-change-form-name="registration">Sign Up</a>
+            </label>
+          </p>
+        </form>
+
+
+        <!----><!-- Registration Form--><!---->
+        <form class="pane reg-form form" name="registration" style="display: block;">
+          <div class="login-reg-container">
+            <div class="gilt-login-reg-logo-container">
+              <div class="gilt-login-reg-logo"></div>
+            </div>
+            <div class="reg-form-content-container">
+              <h1 class="category-heading h1">Sign up for our exclusive membership.</h1>
+              <div class="reg-form-content">
+                <p class="general-facebook-error" style="display: none">
+          We are unable to access your Facebook account. Sorry about that. Please register or login normally.
+        </p>
+                <div class="step step-1" data-step-key="step-1">
+                  <p class="field">
+                    <label for="email">
+                      <div class="eac-input-wrap" style="display: inline-block; position: relative; font-size: 15px;"><input type="email" name="email" id="email" class="primary email text required" placeholder="Email address"><span class="email" style="display: block; box-sizing: content-box; line-height: 30px; padding-top: 1px; padding-bottom: 1px; font-family: 'Proxima Nova Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; letter-spacing: 0px; position: absolute; top: 0px; left: 0px;"></span><span class="eac-cval" style="visibility: hidden; position: absolute; display: inline-block; font-family: 'Proxima Nova Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; letter-spacing: 0px;"></span></div>
+                    </label>
+                  </p>
+                  <input type="button" value="Join Now!" class="button join-now">
+                  <div class="or-container">
+                    <h6 class="or">or</h6>
+                  </div>
+                  <div class="facebook-login">
+                    <button id="fb-button" class="start-sharing fb-button fb-login">
+                      Login with Facebook
+                    </button>
+                  </div>
+                  <p class="posting terms">
+                    We will never post on your behalf without
+        first obtaining your explicit permission.
+                  </p>
+                </div>
+                <div class="step step-2" data-step-key="step-2">
+                  <input type="button" class="back" value="Back">
+                  <p class="field">
+                    <label for="password">
+                      <input type="password" id="password" name="password" class="primary password required" placeholder="Password">
+                    </label>
+                  </p>
+                  <p class="field last-field gender-select">
+                    <strong>What's your gender:</strong>
+                    <label><input type="radio" name="gender" value="f" class="primary gender-female required">&nbsp;Female</label>
+                    <label><input type="radio" name="gender" value="m" class="primary gender-male required">&nbsp;Male</label>
+                  </p>
+                  <input type="submit" value="Submit" class="button register disabled">
+                </div>
+                
+              </div>
+            </div>
+            <p class="terms">
+              By joining Fearless through email or Facebook sign-up, you agree<br>to the <a href="#">Terms of Membership</a> for all Fearless sites.
+            </p>
+          </div>
+          <p class="already-member">
+            Already a member? <a href="#" class="sign-in-link change-form" data-change-form-name="signin">Sign in here</a>
+          </p>
+        </form>
+
+        <!----><!-- Sign In Form--><!---->
+        <form action="https://www.gilt.com/login/redirect" onsubmit="return true;" method="POST" class="pane sign-in-form form" name="signin" style="display: none;">
+          <div class="login-reg-container">
+            <div class="gilt-login-reg-logo-container">
+              <div class="gilt-login-reg-logo"></div>
+            </div>
+            <h1 class="category-heading h1">Sign in to Gilt</h1>
+            <p class="general-facebook-error" style="display: none">
+          We are unable to access your Facebook account. Sorry about that. Please register or login normally.
+        </p>
+            <p class="field">
+              <label for="email">
+                <input type="email" name="email" id="email" class="primary email required" value="" placeholder="Email Address">
+              </label>
+            </p>
+            <p class="field">
+              <label for="password">
+                <input type="password" name="password" id="password" class="primary password required" placeholder="Password">
+              </label>
+            </p>
+            <p class="sign-in-submit-button">
+              
+                  <input type="button" value="Submit" class="button login">
+                
+            </p>
+            <p class="last-field small-text remember-me">
+              <label>
+                <input type="checkbox" id="remember_me" name="remember_me" checked="checked" class="primary required"> Remember Me
+              </label>
+            </p>
+            <p class="forgot-password">
+              <label>
+                <a href="#" class="small-text forgot-password-link change-form" data-change-form-name="forgot-password">Forgot your password?</a>
+              </label>
+            </p>
+            <div class="or-container">
+              <h6 class="or">or</h6>
+            </div>
+            <div class="facebook-login">
+              <button id="fb-button" class="start-sharing fb-button fb-login">
+                Login with Facebook
+              </button>
+            </div>
+            
+          </div>
+
+          <p class="new-member">
+            <label class="sign-up-link">
+              Not a member? <a href="#" class="register-link change-form" data-change-form-name="registration">Sign Up</a>
+            </label>
+          </p>
+        </form>
+
+           </div>
+        </div>
+
+
+                </article>
+              </div>
+            </div>
+          </div>
+        </aside>
+    </div>
+        <!-- end testing -->
+    </body>
+   
+
+</html>
