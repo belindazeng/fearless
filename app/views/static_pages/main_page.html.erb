@@ -38,11 +38,7 @@
         <script type="text/javascript">
             window.targetExperience = 'full';
         </script>
-
-        <!-- Using Chassis -->
-
-      
-        <title>fearless Member Homepage | Personalized Sales | fearless Groupe</title>
+ 
         <meta name="description" content="Fearless makes it painless for young women to experiment with bold, new styles and appreciate their bodies. We provides insider access to today's top brands at affordable prices.">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         
@@ -193,6 +189,9 @@
                     </article>
                 </section>
             </section>
+            <p class="notice"><%= notice %></p>
+            <p class="alert"><%= alert %></p>
+
             <div class="store-affinity-wrapper" style="position: relative">
                 <div class="sales-container sales-store-affinity">
                     <div id="why" class="sales-store-affinity-group affinity-0">
@@ -256,7 +255,7 @@
                         <article class="sale sale-one-column sale-personalized sale-1,100,277,567 medium" data-sale-section="Top Picks" data-sale-index="2" data-fearless-sale-id="1100277567">
                            
                              <%= image_tag("quiz.png", :class => "icon") %>
-
+                             <br/>
                             <h4 class="capitalize title-heading"> Discover Your Style </h4>
                             <p class="capitalize"> Ever wonder what about your style? Not sure what colors and cuts will flatter your body the best? Take our short, fun Style Quiz.</p>
                         </article>
@@ -862,7 +861,7 @@
         <form class="pane reg-form form" name="registration" style="display: block;">
           <div class="login-reg-container">
             <div class="gilt-login-reg-logo-container">
-              <div class="gilt-login-reg-logo"></div>
+              <div class="gilt-login-reg-logo"> <%= image_tag("fearless-black-resolution.png", :class => "logo-signup") %> </div>
             </div>
             <div class="reg-form-content-container">
               <h1 class="category-heading h1">Sign up for our exclusive membership.</h1>
@@ -908,7 +907,7 @@
               </div>
             </div>
             <p class="terms">
-              By joining Fearless through email or Facebook sign-up, you agree<br>to the <a href="#">Terms of Membership</a> for all Fearless sites.
+              By joining Fearless through email or Facebook sign-up, you agree to the <a href="#">Terms of Membership</a> for all Fearless sites.
             </p>
           </div>
           <p class="already-member">
