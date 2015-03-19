@@ -144,7 +144,7 @@
             <div class="dom-dialog-wrapper-2">
                 <div class="dom-dialog">
                     <article class="dom-dialog-content">
-                        <div class="login-register simple-dialog form-area login-registration-simple" style="display: block; ">
+                        <div class="login-register" style="display: block; ">
                             <div class="outer-pane">
                                 <!-- Country:US-United States-65.112.10.59 -->
                                 <!----><!-- Registration Form--><!---->
@@ -168,7 +168,7 @@
                                         <!--<%= f.label :password_confirmation %><br />-->
                                         <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "Confirmation", :class => "primary email text required"%>
                                     </div>
-                                    <div ><%= f.submit "Join Now!", :class => "button join-now"%></div>
+                                    <%= f.submit "Join Now!", :class => "button join-now"%>
                                     <% end %>
                                     <div class="or-container">
                                         <h6 class="or">or</h6>

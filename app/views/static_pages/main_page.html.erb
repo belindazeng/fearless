@@ -92,7 +92,7 @@
                                
                         
                         <!-- HEADER ACTION BUTTON -->
-                        <li class="header-action-button"><a href="javascript:signUp();" class="button tint WOMEN">Sign Up</a></li>
+                        <li class="header-action-button"><a href="users/sign_up" class="button tint WOMEN">Sign Up</a></li>
 
                     </ul>
                 </nav>
@@ -135,7 +135,7 @@
 
                                         <%= link_to "Log Out", destroy_user_session_path, method: :delete, :class=> 'account-nav-label  login-link' %>
                                         <% else %>
-                                            <%= link_to "Sign Up", new_user_session_path, :class=> 'account-nav-label  login-link' %>
+                                            <%= link_to "Sign In", new_user_session_path, :class=> 'account-nav-label  login-link' %>
                                         <% end %> 
                                         
                                     </li>
@@ -163,7 +163,7 @@
                     </div>
                     <div class="nav-unified-store-container">
                         <div class="nav-unified-store-inner">
-                            <form class="search search-form nav-unified-autosuggest search-form-deactivated search-menu-anchor" method="post" action="javascript:signUp();">
+                            <form class="search search-form nav-unified-autosuggest search-form-deactivated search-menu-anchor" method="get" action="users/sign_up">
                                 <div class="search-form-inner" id="button_id">
                                     <input class="search-input" type="search" tabindex="1" autocomplete="off" placeholder="Search" data-fearless-test="input-search">
                                     
@@ -180,9 +180,7 @@
                 <!-- sign up -->
                 <script>
                 function signUp(){
-                    
-                   $('#form_id').show();//Form shows on button click
-                
+                    window.location.href='users/sign_up';
                 }
                        
                 </script>
@@ -213,14 +211,14 @@
                     </article>
                 </section>
             <% else %>
-                <section class="hero-container sales-store-affinity-hero" id="banner-img2" onclick="javascript:signUp()">
+                <section class="hero-container sales-store-affinity-hero" id="banner-img" onclick="javascript:signUp()">
                 <section class="hero">
                     <article class="sale sale-1101628453 sale-index-0" data-fearless-sale-id="1101628453">
                         <div class="mwk-superhero">
                             <header class="name">
                                 
                                         <h1 class="h1 WOMEN"> 
-                                            <a href="javascript: signUp()" class="sale-header-link" style="color:#000000">The Ultimate Dress Shop</a>
+                                            <a href="users/sign_up" class="sale-header-link" style="color:#000000">The Ultimate Dress Shop</a>
                                         </h1>
                                         <p class="copy" style="color:#000000">Effortlessly feminine staples for work, weekends, and beyond
                                         </p>
@@ -661,7 +659,7 @@
             <h1 class="price-text"><span></span>$26</h1>
             <h2 class="sub">your first month</h2>
             <!--<p class="msg">$99 after</p> 0-->
-            <p class="action"><a href="javascript:signUp()" class="btn-premium needsreg" data-msg="Start Building Your Queue">JOIN NOW</a></p>
+            <p class="action"><a href="users/sign_up" class="btn-premium needsreg" data-msg="Start Building Your Queue">JOIN NOW</a></p>
         </div>
     </div>
         
