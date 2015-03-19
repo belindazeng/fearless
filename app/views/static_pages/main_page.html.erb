@@ -1,4 +1,17 @@
-<html class=" web-homepage target-experience-full js">
+<html class=" web-homepage target-experience-full js"><head>
+  <title>Fearless</title>
+  <link data-turbolinks-track="true" href="/assets/application-9093d21892412502139defcedea8ea15.css" media="all" rel="stylesheet">
+  <script async="" src="//www.google-analytics.com/analytics.js"></script><script data-turbolinks-track="true" src="/assets/application-5223239dac533751ce034dd7a5435fdc.js"></script>
+  <meta content="authenticity_token" name="csrf-param">
+<meta content="oDV1AjMJSNi1JFcoD6VC8+ZMFPDDAvo/wckGE1H6Dxs=" name="csrf-token">
+
+   <link rel="icon" type="image/png" href="http://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Harvard_Crimson.svg/2000px-Harvard_Crimson.svg.png">
+
+</head>
+<body class="homepage women" cz-shortcut-listen="true">
+
+
+
     <!-- template for the pricing -->
     <!-- script for header -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -6,7 +19,7 @@
        
 
 
-    <head>
+    
        
 
         <title> Fearless </title>
@@ -56,7 +69,7 @@
 
                     <!-- HEADER LOGO -->
                     <a class="navbar-logo navbar-brand anchor-link" href="#hero">
-                        <%= image_tag("fearless-white-large.png") %>
+                        <img alt="Fearless white large" src="/assets/fearless-white-large-d14e7a7749a04799a33629467b45f4aa.png">
                     </a>
 
                 </div>
@@ -71,7 +84,10 @@
                         <li><a href="#why"> WHY FEARLESS </a></li>
                         <li><a href="#how"> HOW IT WORKS </a></li>
                         <li><a href="#what"> THE PACKAGE </a></li>
+                        <% if user_signed_in? %>
+                        <% else %>
                         <li><a href="#price">PRICE</a></li>
+                        <% end %>
                         <li><a href="#love"> WE LOVE </a></li>
                                
                         
@@ -98,9 +114,9 @@
 
         </script>
         <!--<![endif]-->
-    </head>
+    
 
-    <body class="homepage women" cz-shortcut-listen="true">
+    
         <div class="nav-unified">
             <header class="fearless-navigation component-nav-unified login-reg-wall">
                 <div class="nav-wrap">
@@ -111,15 +127,31 @@
                         <div class="nav-unified-account-inner">
                             <nav class="account-navigation">
                                 <ul class="account-tabs">
+                                    
                                     <li class="account-tab account-nav-sign-in">
-                                        <a href="#" id="button_id" data-fearless-tracking="sign-in" class="account-nav-label  login-link">Sign In</a>
+                                        <% if user_signed_in? %>
+                                        <!-- needs a method delete --> 
+                                        <!-- put has to do with updating -->
+
+                                        <%= link_to "Log Out", destroy_user_session_path, method: :delete, :class=> 'account-nav-label  login-link' %>
+                                        <% else %>
+                                            <%= link_to "Sign Up", new_user_session_path, :class=> 'account-nav-label  login-link' %>
+                                        <% end %> 
+                                        
                                     </li>
                                     <li class="account-tab">
-                                        <a href="javascript:signUp();" id="button_id" class="account-nav-label register-link" >Register</a>
+                                        <% if user_signed_in? %>
+                                        <!-- needs a method delete --> 
+                                        <!-- put has to do with updating -->
+
+                                        <%= link_to "", destroy_user_session_path, method: :delete, :class=> 'account-nav-label  login-link' %>
+                                        <% else %>
+                                            <%= link_to "Register", new_user_registration_path, :class=> 'account-nav-label  login-link' %>
+                                        <% end %> 
                                     </li>
                                 </ul>
                             </nav>
-                            <div class="nav-actions" onClick="javascript:signUp()">
+                            <div class="nav-actions" onclick="javascript:signUp()">
                                 <button class=" fearless-cart-open-link login-reg-wall-override" data-fearless-tracking="cart-label">
                                 Cart
                                 <span class="nav-cart-count cart-count nav-cart-item-count">
@@ -131,13 +163,13 @@
                     </div>
                     <div class="nav-unified-store-container">
                         <div class="nav-unified-store-inner">
-                            <form class="search search-form nav-unified-autosuggest search-form-deactivated search-menu-anchor" method="post"action="javascript:signUp();">
-                                <div class="search-form-inner" id='button_id'>
-                                    <input class="search-input" type="search" tabindex="1" autocomplete="off" placeholder="Search" data-fearless-test="input-search" >
+                            <form class="search search-form nav-unified-autosuggest search-form-deactivated search-menu-anchor" method="post" action="javascript:signUp();">
+                                <div class="search-form-inner" id="button_id">
+                                    <input class="search-input" type="search" tabindex="1" autocomplete="off" placeholder="Search" data-fearless-test="input-search">
                                     
                                     <button id="button_id" class="search-submit" type="submit" data-fearless-test="button-search">
                                     <input class="search-clear" type="reset" value="Clear">
-                                    <button class="search-cancel" type="button">Cancel</button>
+                                    </button><button class="search-cancel" type="button">Cancel</button>
                                 </div>
                                
                             </form>
@@ -158,24 +190,53 @@
         </div>
         <div class="main">
             <div id="user-logged-in" style="visibility: hidden; height: 0;" is-logged-in="false"></div>
-            <section class="hero-container sales-store-affinity-hero" id="banner-img" onclick="javascript:signUp()">
+
+        <% if user_signed_in? %>
+            <section class="hero-container sales-store-affinity-hero" id="banner-img1">
                 <section class="hero">
                     <article class="sale sale-1101628453 sale-index-0" data-fearless-sale-id="1101628453">
                         <div class="mwk-superhero">
                             <header class="name">
+                                
+                                   
                                 <h1 class="h1 WOMEN">
-                                    <a href="javascript: signUp()" class="sale-header-link" style="color:#000000">The Ultimate Dress Shop</a>
+                                    <a class="sale-header-link" style="color:#000000; line-height:1.25;"> Thanks for Joining Fearless</a>
                                 </h1>
-                                <p class="copy" style="color:#000000">Effortlessly feminine staples for work, weekends, and beyond
+
+                                <p class="copy" style="color:#000000; padding: 20px 0px"> We're still doing private beta testing at Harvard. We'll email you as soon as we're ready to launch.
                                 </p>
-                                <a class="button tint WOMEN"> Shop Fearless </a>
+                                <a class="button tint WOMEN"> I'm so excited! </a>
+                    
+                                
                             </header>
                         </div>
                     </article>
                 </section>
+            <% else %>
+                <section class="hero-container sales-store-affinity-hero" id="banner-img2" onclick="javascript:signUp()">
+                <section class="hero">
+                    <article class="sale sale-1101628453 sale-index-0" data-fearless-sale-id="1101628453">
+                        <div class="mwk-superhero">
+                            <header class="name">
+                                
+                                        <h1 class="h1 WOMEN"> 
+                                            <a href="javascript: signUp()" class="sale-header-link" style="color:#000000">The Ultimate Dress Shop</a>
+                                        </h1>
+                                        <p class="copy" style="color:#000000">Effortlessly feminine staples for work, weekends, and beyond
+                                        </p>
+                                        <a class="button tint WOMEN"> Shop Fearless </a>
+
+                               
+                                
+                            </header>
+                        </div>
+                    </article>
+                </section>
+            <% end %>
+
             </section>
-            <p class="notice"><%= notice %></p>
-            <p class="alert"><%= alert %></p>
+            <p class="notice"></p>
+            <p class="alert"></p>
 
             <div class="store-affinity-wrapper" style="position: relative">
                 <div class="sales-container sales-store-affinity">
@@ -196,7 +257,7 @@
                                 </div>
                             </header>
                             <a href="#">
-                            <%= image_tag("styles.jpg", :class => "medium") %>
+                            <img alt="Styles" class="medium" src="/assets/styles-61ef023b467cbf51058fa50f948e0336.jpg">
                             
                             </a>
                         </article>
@@ -211,7 +272,7 @@
                                 </div>
                             </header>
                             <a href="#">
-                             <%= image_tag("savetime.jpg", :class => "medium") %>
+                             <img alt="Savetime" class="medium" src="/assets/savetime-ce9e18961f54b438c3838d66122f8491.jpg">
                             </a>
                         </article>
                         <article class="sale sale-one-column sale-personalized sale-1,100,284,451 medium" data-sale-section="Top Picks" data-sale-index="4" data-fearless-sale-id="1100284451">
@@ -225,7 +286,7 @@
                                 </div>
                             </header>
                             <a href="#">
-                             <%= image_tag("trendy2.jpg", :class => "medium") %>
+                             <img alt="Trendy2" class="medium" src="/assets/trendy2-6de649de68783eebee551184b38bbd04.jpg">
                             </a>
                         </article>
                         <div class="clearfix"></div>
@@ -239,8 +300,8 @@
                         
                         <article class="sale sale-one-column sale-personalized sale-1,100,277,567 medium" data-sale-section="Top Picks" data-sale-index="2" data-fearless-sale-id="1100277567">
                            
-                             <%= image_tag("quiz.png", :class => "icon") %>
-                             <br/>
+                             <img alt="Quiz" class="icon" src="/assets/quiz-bb60b354225dab7c68dd855f199a2c54.png">
+                             <br>
                             <h4 class="capitalize title-heading"> Discover Your Style </h4>
                             <p class="capitalize"> Ever wonder what about your style? Not sure what colors and cuts will flatter your body the best? Take our short, fun Style Quiz.</p>
                         </article>
@@ -248,21 +309,21 @@
                           
 
 
-                            <%= image_tag("box.png", :class => "icon") %>
+                            <img alt="Box" class="icon" src="/assets/box-6cccbbaa2ef175e8e80e062944fdb73a.png">
 
                             <h4 class="capitalize title-heading"> Fearless Fashion </h4>
                             <p class="capitalize"> Based on your style and body, our fashion experts personally curate the perfect outfit and accessories for you.  </p>
 
                         </article>
                         <article class="sale sale-one-column sale-personalized sale-1,100,284,451 medium" data-sale-section="Top Picks" data-sale-index="4" data-fearless-sale-id="1100284451">
-                            <%= image_tag("dress.png", :class => "icon") %>
+                            <img alt="Dress" class="icon" src="/assets/dress-020475a3190c566a145c65f9aca333fe.png">
 
                             <h4 class="capitalize title-heading"> Own It </h4>
                             <p class="capitalize"> You will receive our expert picks as a surprise delivered straight to your door at the end of the month. Now own your beautylishous style. </p>
                         </article>
                         <div class="clearfix"></div>
                     </div>
-                    <div  id="what" class="sales-store-affinity-group affinity-1">
+                    <div id="what" class="sales-store-affinity-group affinity-1">
                         <div class="sales-headline">
                             <span class="sales-store"> So What Do I Get?</span>
                            
@@ -278,7 +339,7 @@
                                 </div>
                             </header>
                             <a href="#">
-                            <%= image_tag("style.jpg", :class => "medium") %>
+                            <img alt="Style" class="medium" src="/assets/style-8e55fe10e4896057f4a0cd82d512f768.jpg">
                             
                             </a>
                         </article>
@@ -293,7 +354,7 @@
                                 </div>
                             </header>
                             <a href="#">
-                            <%= image_tag("orig.jpg", :class => "medium") %>
+                            <img alt="Orig" class="medium" src="/assets/orig-21e7f0cf226a573a58c8fa591d9d11f6.jpg">
                             
                             </a>
                         </article>
@@ -308,20 +369,24 @@
                                 </div>
                             </header>
                             <a href="#">
-                             <%= image_tag("makeup.jpg", :class => "medium") %>
+                             <img alt="Makeup" class="medium" src="/assets/makeup-d73ef1abb8274d92e51beb90a1cccf81.jpg">
                             </a>
                         </article>
                        
                         <div class="clearfix"></div>
                         <!--headline for pricing -->
+                        <% if user_signed_in? %>
+                        <% else %>
                         <div id="price" class="sales-headline">
                             <span class="sales-store"> Pricing</span>
                         </div>
+                        <% end %>
                     </div>
 
                 </div>
                 
-
+                <% if user_signed_in? %>
+                <% else %>
                 <article class="join-banner" style="display: block;">
                     <div class="join-bg">
                     </div>
@@ -330,20 +395,22 @@
                             <h1 class="h1"> Join fearless to find the best brands at affordable prices </h1>
                             <h2 class="h2">Explore something new every month. Join and discover what inspires you today.</h2>
                         </hgroup>
-                        <input class="join-button button tint" type="button" name="join-fearless" value="Join Fearless" onClick="javascript:signUp()">
+                        <input class="join-button button tint" type="button" name="join-fearless" value="Join Fearless" onclick="javascript:signUp()">
                     </section>
                 </article>
+                <% end %>
             </div>
             <div class="dom-live-module women"></div>
         </div>
       
         <!-- pricing model -->
 
-    <body>
+    
 
         <div>
                        
-            
+            <% if user_signed_in? %>
+            <% else %>
             <!-- PRICING SECTION
             ================================= -->
             <section id="pricing" class="pricing-section section">
@@ -424,7 +491,7 @@
                 </div>
 
             </section>
-
+            <% end %>
 
         <!-- JOIN 
         =================================== -->
@@ -565,8 +632,8 @@
          
 </style>
 
-<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200,100' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Old+Standard+TT:400italic' rel='stylesheet' type='text/css'>
+<link href="http://fonts.googleapis.com/css?family=Raleway:400,300,200,100" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Old+Standard+TT:400italic" rel="stylesheet" type="text/css">
 
     <div id="qlp-highlights">
         <div class="sales-headline" id="love">
@@ -692,7 +759,7 @@
                         <li class="primary">Magazine Partner</li>
                         <li>
                             <div class="dujour-logo-img"></div>
-                            <br/>
+                            <br>
                             <div class="tertiary">Exclusive access to fashion, design, culture, travel, and parties.</div>
                             <a class="dujour-cta tertiary" href="#" title="Vogue" target="_blank" rel="nofollow">Explore Vogue Now</a>
                         </li>
@@ -717,7 +784,7 @@
         </script>
 
        
-        <div id="form_id">
+        <div id="form_id" style="display: none;">
         <aside class="dom-dialog-container dom-dialog-0 login-register-dialog dom-dialog-theme-nouveau dom-dialog-position-center dom-dialog-open" id="dom-dialog-0">
 
           
@@ -772,7 +839,7 @@
             </p>
             <p>
               Email: <a href="mailto:belindazeng@college.harvard.edu">belindazeng@college.harvard.edu</a>
-              <br/>
+              <br>
             </p>
 
             <p>
@@ -833,7 +900,7 @@
         <form class="pane reg-form form" name="registration" style="display: block;">
           <div class="login-reg-container">
             <div class="gilt-login-reg-logo-container">
-              <div class="gilt-login-reg-logo"> <%= image_tag("fearless-black-resolution.png", :style => "max-height:80px") %> </div>
+              <div class="gilt-login-reg-logo"> <img alt="Fearless black resolution" src="/assets/fearless-black-resolution-99d25b2b1e369b8d4f8b8ed4786cd70a.png" style="max-height:80px"> </div>
             </div>
             <div class="reg-form-content-container">
               <h1 class="category-heading h1">Sign up for our exclusive membership.</h1>
@@ -844,9 +911,9 @@
                 <div class="step step-1" data-step-key="step-1">
                   <p class="field">
                     <label for="email">
-                      <div class="eac-input-wrap" style="display: inline-block; position: relative; font-size: 15px;"><input type="email" name="email" id="email" class="primary email text required" placeholder="Email address"><span class="email" style="display: block; box-sizing: content-box; line-height: 30px; padding-top: 1px; padding-bottom: 1px; font-family: 'Proxima Nova Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; letter-spacing: 0px; position: absolute; top: 0px; left: 0px;"></span><span class="eac-cval" style="visibility: hidden; position: absolute; display: inline-block; font-family: 'Proxima Nova Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; letter-spacing: 0px;"></span></div>
-                    </label>
-                  </p>
+                      </label></p><div class="eac-input-wrap" style="display: inline-block; position: relative; font-size: 15px;"><input type="email" name="email" id="email" class="primary email text required" placeholder="Email address"><span class="email" style="display: block; box-sizing: content-box; line-height: 30px; padding-top: 1px; padding-bottom: 1px; font-family: 'Proxima Nova Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; letter-spacing: 0px; position: absolute; top: 0px; left: 0px;"></span><span class="eac-cval" style="visibility: hidden; position: absolute; display: inline-block; font-family: 'Proxima Nova Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; letter-spacing: 0px;"></span></div>
+                    
+                  <p></p>
                   <input type="button" value="Join Now!" class="button join-now">
                   <div class="or-container">
                     <h6 class="or">or</h6>
@@ -951,7 +1018,11 @@
         </aside>
     </div>
         <!-- end testing -->
-    </body>
+    
    
 
-</html>
+
+
+
+
+</div></body></html>

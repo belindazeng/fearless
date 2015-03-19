@@ -12,7 +12,7 @@
     margin-bottom: 5px;
 }
 #banner-img {
-    background-image: url(fearless2.jpg); 
+    background-image: url(fearless1.jpg); 
     background-repeat: no-repeat; 
     background-position: center top;
 }
@@ -4595,6 +4595,10 @@ input[invalid] {
     width: 100%
 }
 
+}
+
+#error-message {
+    color: red;
 }
 .login-register {
     background: #F2F2F0;
@@ -10283,9 +10287,7 @@ body.dom-dialog-noscroll {
     position: relative;
     z-index: 2
 }
-.sales-store-affinity-hero.hero-container {
-    padding: 0 0 700px 0
-}
+
 .trending-products-component {
     padding-bottom: 0
 }

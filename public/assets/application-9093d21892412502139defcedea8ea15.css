@@ -10838,7 +10838,13 @@ html.dom-dialog-noscroll.ios body {
  *
  */
 
-#banner-img {
+#banner-img1 {
+    background-image: url(fearless.jpg); 
+    background-repeat: no-repeat; 
+    background-position: center top;
+}
+
+#banner-img2 {
     background-image: url(fearless2.jpg); 
     background-repeat: no-repeat; 
     background-position: center top;
